@@ -1,0 +1,5 @@
+numpy>=1.26
+matplotlib>=3.8
+pytest>=8
+# على Colab مع GPU نحتاج CuPy أيضًا (قد تكون مثبتة مسبقًا):
+#   pip install cupy-cuda12x
