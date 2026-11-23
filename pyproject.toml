@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sifr"
+version = "0.1.0"
+description = "A small Arabic chat model built from scratch, without ready-made AI frameworks"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26", "matplotlib>=3.8"]
+
+[project.optional-dependencies]
+gpu = ["cupy-cuda12x>=13"]
+dev = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+include = ["sifr*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
